@@ -10,7 +10,7 @@ terraform {
 
 provider "kubernetes" {
   # Configuration options
-  config_path    = "~/.kube/config"
+  config_path    = "/root/.kube/config"
 }
 
 module "service" {
