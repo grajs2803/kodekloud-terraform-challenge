@@ -1,7 +1,7 @@
-variable "template_metadata_labels" {
+variable "service_selector" {
   type = map(string)
   default = {
-    name = "frontend"
+    name = "webapp"
   }
 }
 variable "port" {

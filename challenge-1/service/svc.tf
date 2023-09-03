@@ -3,7 +3,7 @@ resource "kubernetes_service" "webapp-service" {
     name = "webapp-service"
   }
   spec {
-    selector = var.template_metadata_labels
+    selector = var.service_selector
 
     port {
       port        = var.port
