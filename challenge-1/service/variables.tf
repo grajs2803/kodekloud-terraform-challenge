@@ -1,8 +1,6 @@
 variable "service_selector" {
   type = map(string)
-  default = {
-    name = "webapp"
-  }
+  default =  kubernetes_deployment.frontend.spec.0.template.0.metadata.0.labels
 }
 variable "port" {
   type = number
